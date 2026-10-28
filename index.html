@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIHIR JANI® — Independent Graphic Designer &amp; Visual Creator</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Portfolio of Mihir Jani — Independent Graphic Designer & Visual Creator based in Gujarat, India. Specializing in Brand Identity, Social Campaigns, Packaging, and Creative Direction." />
+  <meta property="og:title" content="MIHIR JANI® — Creative Portfolio" />
+  <meta property="og:description" content="PULL ME INTO YOUR TEAM. Independent Graphic Designer & Visual Creator." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23111111'/><text x='50%' y='65%' font-family='sans-serif' font-weight='900' font-size='50' fill='%23F5E900' text-anchor='middle'>M</text></svg>" />
+
+  <!-- Google Fonts: Unbounded (Ultra-creative modern display), Bodoni Moda (High-fashion italic serif), Syne (Bold editorial), Outfit (Premium geometric sans), JetBrains Mono (Technical monospace) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,600;1,6..96,700;1,6..96,800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Outfit:wght@400;500;600;700;800&family=Syne:wght@700;800;900&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-editorial-body">
+  <!-- Atmospheric Ambient Glow Orbs -->
+  <div class="ambient-orb orb-1" aria-hidden="true"></div>
+  <div class="ambient-orb orb-2" aria-hidden="true"></div>
+  <div class="ambient-orb orb-3" aria-hidden="true"></div>
+
+  <!-- CUSTOM MOUSE CURSOR (Desktop only) -->
+  <div class="custom-cursor-dot" id="cursorDot"></div>
+  <div class="custom-cursor-outline" id="cursorOutline"></div>
+
+  <!-- SOUND TOGGLE PILL -->
+  <button id="sound-toggle" class="sound-pill" aria-label="Toggle interactive sound effects">
+    <span class="sound-wave"><span></span><span></span><span></span></span>
+    <span class="sound-label">AUDIO: ON</span>
+  </button>
+
+  <!-- =========================================================================
+       SECTION 01: NAVIGATION
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <!-- Left Brand -->
+      <a href="#hero" class="brand-monogram">
+        <span class="brand-name">MIHIR JANI<span class="brand-reg">®</span></span>
+      </a>
+
+      <!-- Right Nav Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link"><span class="nav-num">01</span> Home</a>
+        <a href="#work" class="nav-link"><span class="nav-num">02</span> Work</a>
+        <a href="#about" class="nav-link"><span class="nav-num">03</span> About</a>
+        <a href="#skills" class="nav-link"><span class="nav-num">04</span> Arsenal</a>
+        <a href="#contact" class="nav-link"><span class="nav-num">05</span> Contact</a>
+      </nav>
+
+      <!-- Availability Indicator & CTA -->
+      <div class="header-right-meta">
+        <div class="availability-badge" title="Mihir Jani is currently taking on select freelance &amp; full-time design inquiries">
+          <span class="pulse-dot"></span>
+          <span class="availability-text">AVAILABLE FOR FREELANCE PROJECTS</span>
+        </div>
+        <a href="#contact" class="btn-talk-nav magnetic-btn">LET'S TALK</a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close navigation menu">✕</button>
+    <div class="mobile-drawer-inner">
+      <nav class="mobile-links">
+        <a href="#hero" class="mobile-link">01. Home</a>
+        <a href="#work" class="mobile-link">02. Selected Work</a>
+        <a href="#about" class="mobile-link">03. About Mihir</a>
+        <a href="#skills" class="mobile-link">04. Capabilities</a>
+        <a href="#experience" class="mobile-link">05. Timeline</a>
+        <a href="#contact" class="mobile-link">06. Start a Project</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <span class="dossier-pill">LOC: GUJARAT, INDIA</span>
+        <a href="mailto:crowncreations30@gmail.com" class="mobile-email">crowncreations30@gmail.com</a>
+        <a href="tel:+919925269738" class="mobile-phone" style="font-family: var(--font-mono); color: var(--text-main); font-size: 0.85rem; text-decoration: none;">+91 99252 69738</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- =========================================================================
+         SECTION 02: HERO SECTION (THE "PULL ME INTO YOUR TEAM" ARENA)
+         ========================================================================= -->
+    <section id="hero" class="hero-section">
+      <div class="page-container">
+        <!-- Top Editorial Label -->
+        <div class="hero-top-bar">
+          <span class="top-tag"><span class="accent-dot"></span> INDEPENDENT GRAPHIC DESIGNER &amp; VISUAL CREATOR</span>
+          <span class="top-geo">GUJARAT, INDIA [GLOBAL CLIENTS]</span>
+        </div>
+
+        <!-- Oversized Headline -->
+        <div class="hero-title-container">
+          <h1 class="hero-headline">
+            <span class="line-bold">PULL ME INTO</span>
+            <span class="line-italic">YOUR TEAM.</span>
+          </h1>
+          <p class="hero-subheading">
+            Specializing in bold brand identities, high-converting social campaigns, advertising, and packaging that command attention and refuse to be forgotten.
+          </p>
+        </div>
+
+        <!-- The Interactive Pull Arena -->
+        <div class="pull-arena" id="pullArena">
+          <!-- Dynamic SVG Elastic Bezier Cord Canvas -->
+          <svg class="cords-canvas" id="cordsSvg"></svg>
+
+          <!-- Reaching Hand Graphic Anchor (Left) -->
+          <div class="hand-anchor" id="handAnchor">
+            <img src="assets/hand.svg" alt="Suited hand pulling elastic cord" class="hand-svg" draggable="false" />
+          </div>
+
+          <!-- Parallax Orbit Floating Keywords -->
+          <div class="orbit-container">
+            <span class="orbit-word word-ship" data-speed="1.2">SHIP</span>
+            <span class="orbit-word word-together" data-speed="0.8">TOGETHER</span>
+            <span class="orbit-word word-hello" data-speed="1.4">HELLO</span>
+            <span class="orbit-word word-lets" data-speed="0.9">LET'S</span>
+            <span class="orbit-word word-talk accent-yellow" data-speed="1.3">TALK</span>
+            <span class="orbit-word word-build" data-speed="1.1">BUILD</span>
+          </div>
+
+          <!-- The Signature "LET'S TALK" Draggable Tension Pill -->
+          <div class="draggable-pill-wrap" id="hireDraggable">
+            <button class="hire-pill-button magnetic-btn" id="hireButton" aria-label="Initiate contact with Mihir Jani">
+              <span class="pill-glow"></span>
+              <span class="pill-inner-text">
+                <span class="pill-icon">✦</span>
+                <span class="pill-title">LET'S TALK</span>
+              </span>
+              <span class="pill-micro">PULL CORD OR CLICK</span>
+            </button>
+          </div>
+
+          <!-- Pull Hint -->
+          <div class="pull-hint">
+            <span class="arrow-hint">⇄</span>
+            <span>CLICK &amp; DRAG THE BUTTON TO TEST ELASTIC TENSION • PULL TO INITIATE PROJECT</span>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator-wrap">
+          <a href="#work" class="scroll-indicator-link">
+            <span class="scroll-line"></span>
+            <span class="scroll-text">EXPLORE SELECTED WORK</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 03: SELECTED PROJECTS (ASYMMETRIC GRAPHIC DESIGN PORTFOLIO)
+         ========================================================================= -->
+    <section id="work" class="work-section">
+      <div class="page-container">
+        <!-- Section Header -->
+        <div class="section-title-wrap">
+          <div class="section-number-pill">// 02 • PORTFOLIO</div>
+          <h2 class="section-main-title">
+            SELECTED<br />
+            <span class="serif-accent">PROJECTS.</span>
+          </h2>
+          <p class="section-lead-text">
+            A curated selection of work spanning brand identity, social campaigns, advertising, packaging, and editorial design.
+          </p>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="project-filter-bar">
+          <button class="filter-btn active" data-filter="all">ALL DISCIPLINES (12)</button>
+          <button class="filter-btn" data-filter="brand">BRANDING</button>
+          <button class="filter-btn" data-filter="social">SOCIAL CAMPAIGNS</button>
+          <button class="filter-btn" data-filter="advertising">ADVERTISING</button>
+          <button class="filter-btn" data-filter="product">PRODUCT &amp; PACKAGING</button>
+          <button class="filter-btn" data-filter="poster">EDITORIAL &amp; POSTERS</button>
+          <button class="filter-btn" data-filter="ui/ux">UI/UX &amp; DIGITAL</button>
+        </div>
+
+        <!-- Asymmetric Project Grid -->
+        <div class="projects-asymmetric-grid" id="projectsContainer">
+          <!-- Populated dynamically via config.js -->
+        </div>
+
+        <!-- Portfolio Note -->
+        <div class="portfolio-client-note">
+          <div class="note-icon">✓</div>
+          <div class="note-content">
+            <strong>OFFICIAL WORK SHOWCASE:</strong>
+            12 authentic design case studies featuring Mihir Jani UI/UX &amp; Visual Design System, X-100 Streetwear Sneaker Product Campaign, CloneX, D-Vivid Consultant Campaigns, Gabardine Denim, KENT RO, Darshan Shah Show, Navratri Festival, and Diva HealthCare. Click any card to explore the full case study!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 04: ABOUT ME (THE PERSON BEHIND THE PIXELS)
+         ========================================================================= -->
+    <section id="about" class="about-section">
+      <div class="page-container">
+        <div class="section-number-pill dark-pill">// 03 • DOSSIER</div>
+        <h2 class="section-main-title text-light">
+          THE PERSON<br />
+          <span class="serif-accent accent-yellow-text">BEHIND THE PIXELS.</span>
+        </h2>
+
+        <div class="about-grid">
+          <!-- Left: Mihir's Portrait Photo Card -->
+          <div class="about-photo-wrapper">
+            <div class="editorial-photo-card" id="aboutPhotoCard">
+              <div class="photo-inner-border">
+                <img src="assets/profile.jpg" alt="Mihir Jani — Graphic Designer" class="profile-photo" />
+                <div class="photo-tag-stamp">
+                  <span class="stamp-pill">MIHIR JANI®</span>
+                  <span class="stamp-loc">GUJARAT, IN</span>
+                </div>
+                <div class="crop-mark c-tl"></div>
+                <div class="crop-mark c-tr"></div>
+                <div class="crop-mark c-bl"></div>
+                <div class="crop-mark c-br"></div>
+              </div>
+              <div class="photo-footer-meta">
+                <span class="meta-name">MIHIR JANI</span>
+                <span class="meta-role">GRAPHIC DESIGNER &amp; VISUAL CREATOR</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Narrative & Philosophy -->
+          <div class="about-content">
+            <div class="about-lead">
+              "Hey, I'm Mihir Jani — a graphic designer passionate about transforming ideas into meaningful visual experiences."
+            </div>
+
+            <div class="about-narrative">
+              <p>
+                Design is not simply making things look attractive; it is the deliberate orchestration of clarity, emotion, and persuasion. Combining a Bachelor's in Computer Engineering (8.12 CGPA) with specialized graphic design training from Equinoxx Creative Academy, I unite technical systems thinking with editorial visual craft.
+              </p>
+              <p style="margin-top: 14px;">
+                Currently serving as Senior Graphic Designer at D-Vivid Consultant in Ahmedabad, I direct and execute high-converting digital campaigns, visual brand identities, and cross-platform creative collateral that command attention and drive measurable growth.
+              </p>
+            </div>
+
+            <!-- Creative Approach & Philosophy Grid -->
+            <div class="philosophy-grid">
+              <div class="philosophy-box">
+                <div class="box-num">01 / CONCEPT FIRST</div>
+                <h3 class="box-title">Purpose-Driven Research</h3>
+                <p class="box-desc">Every line, typeface, and color palette is born from a rigorous understanding of the brand's core mission and competitive landscape.</p>
+              </div>
+
+              <div class="philosophy-box">
+                <div class="box-num">02 / CRAFT &amp; DISCIPLINE</div>
+                <h3 class="box-title">Obsessive Typography</h3>
+                <p class="box-desc">Mastering kerning, grid hierarchies, and structural balance to ensure design reads with effortless confidence across every medium.</p>
+              </div>
+            </div>
+
+            <!-- Resume & Direct Action -->
+            <div class="about-action-bar">
+              <a href="assets/projects/CV.pdf" download="Mihir_Jani_CV.pdf" class="btn-yellow-solid magnetic-btn" id="resumeBtn" target="_blank">
+                <span>DOWNLOAD RESUME (PDF)</span>
+                <span class="btn-arrow">↓</span>
+              </a>
+              <a href="#contact" class="btn-outline-white magnetic-btn">
+                <span>START A CONVERSATION</span>
+                <span class="btn-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 05: WHAT I BUILD WITH (ARSENAL & CAPABILITIES)
+         ========================================================================= -->
+    <section id="skills" class="skills-section">
+      <div class="page-container">
+        <div class="section-number-pill">// 04 • ARSENAL</div>
+        <div class="skills-header-row">
+          <h2 class="section-main-title">
+            WHAT I BUILD<br />
+            <span class="serif-accent">WITH.</span>
+          </h2>
+          <p class="skills-lead">
+            No generic percentage bars. Just deep, battle-tested expertise across industry-standard creative software, design disciplines, and modern AI workflows.
+          </p>
+        </div>
+
+        <div class="skills-interactive-grid" id="skillsContainer">
+          <!-- Populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 06: EXPERIENCE & CREATIVE JOURNEY (TIMELINE)
+         ========================================================================= -->
+    <section id="experience" class="experience-section">
+      <div class="page-container">
+        <div class="section-number-pill">// 05 • MILESTONES</div>
+        <h2 class="section-main-title">
+          EXPERIENCE &amp;<br />
+          <span class="serif-accent">CREATIVE JOURNEY.</span>
+        </h2>
+
+        <div class="timeline-container" id="experienceTimeline">
+          <!-- Populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 07: CONTACT (LET'S MAKE SOMETHING UNFORGETTABLE)
+         ========================================================================= -->
+    <section id="contact" class="contact-section">
+      <div class="page-container">
+        <div class="section-number-pill dark-pill">// 06 • TRANSMISSION</div>
+        
+        <div class="contact-container-box">
+          <div class="contact-header-text">
+            <h2 class="contact-headline">
+              LET'S MAKE<br />
+              <span class="serif-accent accent-yellow-text">SOMETHING</span><br />
+              UNFORGETTABLE.
+            </h2>
+            <p class="contact-sub">
+              Have an upcoming branding project, social campaign, or creative design challenge? Send a message and let's craft something bold.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Left: Channels -->
+            <div class="contact-channels">
+              <div class="channel-group">
+                <span class="group-label">DIRECT INQUIRIES</span>
+                <div class="copy-email-field" id="copyEmailTrigger" data-copy="crowncreations30@gmail.com">
+                  <span class="email-value" id="displayEmail">crowncreations30@gmail.com</span>
+                  <button class="copy-pill-btn" aria-label="Copy email address">COPY</button>
+                </div>
+              </div>
+
+              <div class="channel-group">
+                <span class="group-label">DIRECT PHONE / CALL</span>
+                <a href="tel:+919925269738" class="copy-email-field" style="text-decoration: none; color: inherit;" id="phoneTrigger">
+                  <span class="email-value">+91 99252 69738</span>
+                  <span class="copy-pill-btn">CALL ↗</span>
+                </a>
+              </div>
+
+              <div class="channel-group">
+                <span class="group-label">INSTANT MESSAGING</span>
+                <a href="https://wa.me/qr/KGEWR3H7AEQJM1" target="_blank" rel="noreferrer" class="whatsapp-card" id="whatsappLink">
+                  <div class="wa-icon">💬</div>
+                  <div class="wa-text">
+                    <span class="wa-title">Chat directly on WhatsApp</span>
+                    <span class="wa-sub">+91 99252 69738 • Fast Reply</span>
+                  </div>
+                  <span class="wa-arrow">↗</span>
+                </a>
+              </div>
+
+              <div class="channel-group">
+                <span class="group-label">DIGITAL PRESENCE</span>
+                <div class="social-tags-wrap">
+                  <a href="https://www.instagram.com/crownc.reations?stkn=MTRxdW9jdHY3Z2U3cg==" target="_blank" rel="noreferrer" class="social-tag" id="instaLink">INSTAGRAM ↗</a>
+                  <a href="https://www.linkedin.com/in/mihirkumar-jani-0ba7322a8" target="_blank" rel="noreferrer" class="social-tag" id="linkedinLink">LINKEDIN ↗</a>
+                  <a href="https://www.behance.net/mihirjani?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafn4w_vUiReFZVxp1SAZxgVeQtSIAws_RrKvu7uUw2UegyYfHgRMfOhU9fSag_aem_CW9hWF5rgowX_TJ3HEEvrw" target="_blank" rel="noreferrer" class="social-tag" id="behanceLink">BEHANCE ↗</a>
+                </div>
+              </div>
+
+              <div class="channel-group">
+                <span class="group-label">STUDIO LOCATION</span>
+                <div class="location-spec">
+                  GUJARAT, INDIA • GLOBAL REMOTE CLIENTS WELCOME
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Real Working Contact Form -->
+            <div class="contact-form-wrap">
+              <form id="projectContactForm" class="actual-contact-form">
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="formName" class="form-label">YOUR NAME *</label>
+                    <input type="text" id="formName" class="form-input" placeholder="e.g. Elena Rostova" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="formEmail" class="form-label">YOUR EMAIL *</label>
+                    <input type="email" id="formEmail" class="form-input" placeholder="e.g. elena@studio.com" required />
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="formProjectType" class="form-label">PROJECT TYPE *</label>
+                  <select id="formProjectType" class="form-select" required>
+                    <option value="" disabled selected>Select project discipline...</option>
+                    <option value="Brand Identity & Logo Design">Brand Identity &amp; Logo Design</option>
+                    <option value="Social Media Campaigns">Social Media Campaigns</option>
+                    <option value="Advertising & Marketing Creatives">Advertising &amp; Marketing Creatives</option>
+                    <option value="Packaging Design">Packaging Design</option>
+                    <option value="Poster & Editorial Design">Poster &amp; Editorial Design</option>
+                    <option value="UI/UX & Web Design">UI/UX &amp; Web Design</option>
+                    <option value="Full-Time / Retainer Role">Full-Time / Team Invitation</option>
+                    <option value="Other Creative Collaboration">Other Creative Collaboration</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="formMessage" class="form-label">PROJECT BRIEF &amp; OBJECTIVES *</label>
+                  <textarea id="formMessage" class="form-textarea" rows="4" placeholder="Tell me about your project, timeline, and vision..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-yellow-solid btn-full-width magnetic-btn" id="formSubmitBtn">
+                  <span>START A PROJECT</span>
+                  <span class="btn-arrow">→</span>
+                </button>
+
+                <!-- Feedback banner -->
+                <div id="formStatusBanner" class="form-status hidden"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       SECTION 08: FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="page-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <div class="footer-logo">MIHIR JANI<span class="brand-reg">®</span></div>
+          <p class="footer-tagline">"Designed with curiosity. Created with purpose."</p>
+        </div>
+
+        <div class="footer-col-nav">
+          <span class="footer-heading">NAVIGATION</span>
+          <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-col-social">
+          <span class="footer-heading">CHANNELS</span>
+          <div class="footer-links">
+            <a href="https://www.instagram.com/crownc.reations?stkn=MTRxdW9jdHY3Z2U3cg==" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://www.linkedin.com/in/mihirkumar-jani-0ba7322a8" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.behance.net/mihirjani?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafn4w_vUiReFZVxp1SAZxgVeQtSIAws_RrKvu7uUw2UegyYfHgRMfOhU9fSag_aem_CW9hWF5rgowX_TJ3HEEvrw" target="_blank" rel="noreferrer">Behance</a>
+            <a href="assets/projects/CV.pdf" download="Mihir_Jani_CV.pdf" class="footer-cv-link">Download CV (PDF) ↗</a>
+            <a href="tel:+919925269738">+91 99252 69738</a>
+            <a href="mailto:crowncreations30@gmail.com">crowncreations30@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="footer-col-action">
+          <a href="#hero" class="back-to-top-btn magnetic-btn">
+            <span>BACK TO TOP</span>
+            <span class="arrow-up">↑</span>
+          </a>
+          <div class="footer-copyright">
+            © <span id="currentYear">2026</span> MIHIR JANI. ALL RIGHTS RESERVED.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       INDIVIDUAL PROJECT CASE STUDY OVERLAY / MODAL
+       ========================================================================= -->
+  <div class="case-study-backdrop" id="caseStudyModal">
+    <div class="case-study-dialog">
+      <button class="case-close-btn" id="caseCloseBtn" aria-label="Close project details">&times;</button>
+      
+      <div class="case-modal-header">
+        <span class="case-cat-pill" id="modalCat">CATEGORY</span>
+        <h2 class="case-modal-title" id="modalTitle">Project Title</h2>
+        <span class="case-modal-year" id="modalYear">2026</span>
+      </div>
+
+      <div class="case-hero-image-wrap">
+        <img src="" alt="Project Showcase Preview" id="modalImage" class="modal-main-img" />
+      </div>
+
+      <div class="case-modal-body">
+        <div class="case-desc-col">
+          <h3 class="case-subhead">OVERVIEW</h3>
+          <p class="case-text" id="modalDesc">Detailed description...</p>
+
+          <h3 class="case-subhead">THE CHALLENGE</h3>
+          <p class="case-text" id="modalChallenge">Challenge details...</p>
+
+          <h3 class="case-subhead">THE SOLUTION</h3>
+          <p class="case-text" id="modalSolution">Solution details...</p>
+        </div>
+
+        <div class="case-meta-col">
+          <div class="case-meta-block">
+            <span class="meta-block-label">DELIVERABLES</span>
+            <ul class="meta-deliverables-list" id="modalDeliverables"></ul>
+          </div>
+
+          <div class="case-meta-block">
+            <span class="meta-block-label">TOOLS &amp; SOFTWARE</span>
+            <div class="meta-tools-wrap" id="modalTools"></div>
+          </div>
+
+          <div class="case-meta-block">
+            <a href="#contact" class="btn-yellow-solid btn-full-width case-inquire-btn" id="modalInquireBtn">
+              <span>INQUIRE ABOUT SIMILAR WORK →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOAD SCRIPTS -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
