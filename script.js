@@ -68,16 +68,18 @@
   // =========================================================================
   window.handleImgError = function (img, originalPath) {
     if (!img) return;
-    const filename = (originalPath || img.getAttribute('src') || '').split('/').pop();
+    const filename = (originalPath || img.getAttribute('src') || '').split('/').pop().split('?')[0];
     if (!filename) return;
 
     const retry = parseInt(img.dataset.retryCount || '0', 10);
     const fallbacks = [
-      'assets/work/' + filename,
       'assets/' + filename,
-      './' + (originalPath || ''),
+      'assets/work/' + filename,
+      'assets/projects/work/' + filename,
+      './assets/' + filename,
+      '/assets/' + filename,
       '/assets/projects/work/' + filename,
-      '/assets/' + filename
+      filename
     ];
 
     if (retry < fallbacks.length) {

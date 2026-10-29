@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" fill="none">
+  <!-- Outer cuff & suit sleeve -->
+  <defs>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#F2D2BD"/>
+      <stop offset="60%" stop-color="#E8BEA5"/>
+      <stop offset="100%" stop-color="#DDAF92"/>
+    </linearGradient>
+    <filter id="handShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#handShadow)">
+    <!-- Dark Suit Sleeve -->
+    <path d="M 0 50 L 160 70 L 155 210 L 0 230 Z" fill="url(#suitGrad)" stroke="#111" stroke-width="2"/>
+    <!-- Sleeve Stitching Detail -->
+    <line x1="140" y1="74" x2="135" y2="206" stroke="#27272a" stroke-width="2" stroke-dasharray="4 4"/>
+    
+    <!-- White Dress Shirt Cuff -->
+    <path d="M 155 70 L 195 76 L 190 204 L 150 210 Z" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="2"/>
+    <!-- Cuff Link Button -->
+    <rect x="168" y="130" width="10" height="20" rx="3" fill="#D4AF37" stroke="#996515" stroke-width="1.5"/>
+    <circle cx="173" cy="140" r="2.5" fill="#FFF"/>
+
+    <!-- Hand & Fingers (Reaching & Pinching cord) -->
+    <!-- Palm / Back of hand -->
+    <path d="M 195 82 C 225 80 265 92 310 110 C 330 118 340 135 345 155 C 335 178 300 195 250 198 L 190 200 Z" fill="url(#skinGrad)" stroke="#8C6246" stroke-width="2.5"/>
+    
+    <!-- Knuckle crease lines -->
+    <path d="M 270 112 Q 280 125 275 140" stroke="#B87D56" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M 295 125 Q 305 138 300 150" stroke="#B87D56" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Pinky Finger (Curled under) -->
+    <path d="M 320 162 C 345 168 375 170 390 160 C 395 156 390 150 375 150 C 350 150 330 155 315 158" fill="url(#skinGrad)" stroke="#8C6246" stroke-width="2.5"/>
+    
+    <!-- Ring Finger -->
+    <path d="M 330 148 C 365 152 405 152 418 140 C 423 134 415 128 395 130 C 365 132 340 138 325 142" fill="url(#skinGrad)" stroke="#8C6246" stroke-width="2.5"/>
+
+    <!-- Middle Finger -->
+    <path d="M 335 132 C 380 132 430 132 445 120 C 450 114 440 108 418 112 C 380 116 350 122 330 126" fill="url(#skinGrad)" stroke="#8C6246" stroke-width="2.5"/>
+
+    <!-- Index Finger (Extended forward, pulling) -->
+    <path d="M 325 112 C 375 105 450 98 480 92 C 495 89 498 76 482 78 C 445 84 380 95 330 104" fill="url(#skinGrad)" stroke="#8C6246" stroke-width="2.5"/>
+    <!-- Index Fingernail -->
+    <path d="M 470 82 C 476 81 484 81 486 84 C 484 87 476 89 470 87 Z" fill="#F8E3D2" stroke="#B87D56" stroke-width="1"/>
+
+    <!-- Thumb (Pinching down toward index, grasping the string) -->
+    <path d="M 270 135 C 310 145 375 155 420 135 C 438 126 438 110 420 108 C 385 106 345 120 300 122" fill="url(#skinGrad)" stroke="#8C6246" stroke-width="2.5"/>
+    <!-- Thumb Nail -->
+    <path d="M 412 112 C 418 112 425 115 425 120 C 420 122 414 122 410 118 Z" fill="#F8E3D2" stroke="#B87D56" stroke-width="1"/>
+
+    <!-- Contact Grip Point (Finger pinch where strings tie) -->
+    <!-- Tether Knot / Brass Ring -->
+    <ellipse cx="440" cy="115" rx="5" ry="7" fill="#C59B27" stroke="#7A560B" stroke-width="1.5"/>
+  </g>
+</svg>
