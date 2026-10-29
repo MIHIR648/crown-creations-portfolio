@@ -64,6 +64,29 @@
   }
 
   // =========================================================================
+  // 1.5 SMART IMAGE FALLBACK LOADER FOR HOSTING / GITHUB / VERCEL
+  // =========================================================================
+  window.handleImgError = function (img, originalPath) {
+    if (!img) return;
+    const filename = (originalPath || img.getAttribute('src') || '').split('/').pop();
+    if (!filename) return;
+
+    const retry = parseInt(img.dataset.retryCount || '0', 10);
+    const fallbacks = [
+      'assets/work/' + filename,
+      'assets/' + filename,
+      './' + (originalPath || ''),
+      '/assets/projects/work/' + filename,
+      '/assets/' + filename
+    ];
+
+    if (retry < fallbacks.length) {
+      img.dataset.retryCount = String(retry + 1);
+      img.src = fallbacks[retry];
+    }
+  };
+
+  // =========================================================================
   // 2. RENDER SELECTED PROJECTS
   // =========================================================================
   const projectsContainer = document.getElementById('projectsContainer');
@@ -95,7 +118,7 @@
 
       card.innerHTML = `
         <div class="project-media-wrap">
-          <img src="${p.image}" alt="${p.title}" class="project-img" loading="lazy" />
+          <img src="${p.image}" alt="${p.title}" class="project-img" loading="lazy" onerror="window.handleImgError(this, '${p.image}')" />
           <span class="project-category-badge">${p.categoryShort || p.category}</span>
           <span class="project-year-badge">${p.year}</span>
         </div>
@@ -186,8 +209,17 @@
     document.getElementById('modalCat').textContent = project.categoryShort || project.category;
     document.getElementById('modalTitle').textContent = project.title;
     document.getElementById('modalYear').textContent = project.year;
-    document.getElementById('modalImage').src = project.image;
-    document.getElementById('modalImage').alt = project.title;
+    
+    const modalImg = document.getElementById('modalImage');
+    if (modalImg) {
+      modalImg.dataset.retryCount = '0';
+      modalImg.onerror = function () {
+        window.handleImgError(this, project.image);
+      };
+      modalImg.src = project.image;
+      modalImg.alt = project.title;
+    }
+
     document.getElementById('modalDesc').textContent = project.description;
     document.getElementById('modalChallenge').textContent = project.challenge;
     document.getElementById('modalSolution').textContent = project.solution;
